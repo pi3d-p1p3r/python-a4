@@ -53,7 +53,7 @@ def simplex_solve():
         
         leaving_row = np.argmin(ratios)
         leaving_var = variables[leaving_row]
-        print(f"Leaving variable: {leaving_var}")
+        print(f"Outgoing variable: {leaving_var}")
         
         # Pivot operation
         pivot = tableau[leaving_row, entering_col]
@@ -86,4 +86,5 @@ def simplex_solve():
     
     return solution, profit
 
+# Run the solver
 solution, profit = simplex_solve()

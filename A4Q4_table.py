@@ -9,7 +9,7 @@ def big_m_method():
     ])
     
     b = np.array([4000, 50, 1400])
-    M = 1e6  # Large positive number
+    M = 1e4  # Large positive number
     c = np.array([4, 3, 0, 0, 0, M, M, M])
     basic_vars = [5, 6, 7]          # Initial basic variables: a1, a2, a3 (indices 5,6,7)
     
@@ -38,7 +38,7 @@ def big_m_method():
         # Print tableau header
         print(f"\nTableau {iteration}:")
         print(f"{'':>12} " + " ".join(f"{name:>10}" for name in var_names) + f"{'RHS':>12}")
-        print("-" * 120)
+        print("-" * 113)
         
         # Print constraint rows
         constraint_names = ['Vitamins', 'Minerals', 'Calories', 'Objective']

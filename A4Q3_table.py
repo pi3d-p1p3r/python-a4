@@ -29,7 +29,7 @@ def simplex_solve():
             for j in range(7): print(f"{tableau[i,j]:>8.2f}", end="")
             print()
         
-        print(f"{'z':<4}", end="")
+        print(f"{'Z':<4}", end="")
         for j in range(7): print(f"{tableau[3,j]:>8.2f}", end="")
         print()
         
@@ -86,5 +86,4 @@ def simplex_solve():
     
     return solution, profit
 
-# Run the solver
 solution, profit = simplex_solve()

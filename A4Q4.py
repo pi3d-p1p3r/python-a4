@@ -4,9 +4,9 @@ def big_m_method():
     # Coefficients for constraints (A matrix)
     # Columns: x, y, s1, s2, s3, a1, a2, a3
     A = np.array([
-        [200, 100, -1, 0, 0, 1, 0, 0],  # Vitamins
-        [1, 2, 0, -1, 0, 0, 1, 0],      # Minerals
-        [40, 40, 0, 0, -1, 0, 0, 1]     # Calories
+        [200, 100, -1, 0, 0,    1, 0, 0],      # Vitamins
+        [1, 2,      0, -1, 0,   0, 1, 0],      # Minerals
+        [40, 40,    0, 0, -1,   0, 0, 1]       # Calories
     ])
     
     # Right-hand side (b vector)
